@@ -1,4 +1,4 @@
-// api/proxy.js - 部署在 Vercel 的 api 目录下
+// api/proxy.js
 
 // 域名映射配置
 const DOMAIN_MAP = {
