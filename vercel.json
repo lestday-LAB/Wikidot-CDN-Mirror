@@ -1,10 +1,14 @@
 {
-    "name": "vercel-proxy",
-    "main": "api/proxy.js",
-    "scripts": {
-      "dev": "vercel dev"
+    "version": 2,
+    "functions": {
+      "api/proxy.js": {
+        "maxDuration": 10
+      }
     },
-    "engines": {
-      "node": "18.x"
-    }
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/api/proxy"
+      }
+    ]
   }
