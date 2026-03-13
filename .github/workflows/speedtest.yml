@@ -2,8 +2,13 @@ name: 多域名测速
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch:
+    - cron: '0 */6 * * *'  # 每6小时运行一次
+  workflow_dispatch:        # 支持手动触发
+
+# 添加并发控制，避免多个运行实例冲突
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   speedtest:
@@ -19,6 +24,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'  # 启用缓存加速
+      
+      - name: 安装依赖
+        run: |
+          # 安装jq（如果不存在）
+          sudo apt-get update && sudo apt-get install -y jq
       
       - name: 创建测速脚本
         run: |
@@ -31,21 +42,28 @@ jobs:
           ];
 
           const API_BASE = 'https://api-v2.cenguigui.cn/api/ping/api.php';
+          const TIMEOUT = 10000; // 10秒超时
 
           function getCurrentTime() {
-            const now = new Date();
-            return now.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+            return new Date().toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
           }
 
           function formatNumber(num) {
-            return num.toFixed(2);
+            return num ? num.toFixed(2) : '0.00';
           }
 
           async function testDomain(domain) {
+            const startTime = Date.now();
             try {
+              const controller = new AbortController();
+              const timeoutId = setTimeout(() => controller.abort(), TIMEOUT);
+              
               const url = `${API_BASE}?url=${encodeURIComponent(domain)}`;
-              const response = await fetch(url);
+              const response = await fetch(url, { signal: controller.signal });
+              clearTimeout(timeoutId);
+              
               const data = await response.json();
+              const elapsed = Date.now() - startTime;
               
               if (data.code === 200 && data.data) {
                 return {
@@ -55,125 +73,188 @@ jobs:
                   max: parseFloat(data.data.max) || 0,
                   min: parseFloat(data.data.min) || 0,
                   avg: parseFloat(data.data.average) || 0,
+                  responseTime: elapsed,
                   success: true
                 };
               } else {
                 return {
                   domain,
                   success: false,
-                  error: data.msg || '测速失败'
+                  error: data.msg || '测速失败',
+                  responseTime: elapsed
                 };
               }
             } catch (error) {
               return {
                 domain,
                 success: false,
-                error: error.message
+                error: error.name === 'AbortError' ? '超时' : error.message,
+                responseTime: Date.now() - startTime
               };
             }
           }
 
           function generateTableRow(result) {
             if (!result.success) {
-              return `| ${result.domain} | 测速失败: ${result.error} | - | - | - | - |`;
+              return `| ${result.domain} | ❌ 失败 | ${result.error} | - | - | - |`;
             }
             
-            return `| ${result.domain} | ${result.location} | ${result.ip} | ${formatNumber(result.min)}ms | ${formatNumber(result.avg)}ms | ${formatNumber(result.max)}ms |`;
+            const status = result.avg < 200 ? '✅' : (result.avg < 500 ? '⚠️' : '❌');
+            return `| ${result.domain} | ${status} ${result.location} | ${result.ip} | ${formatNumber(result.min)}ms | ${formatNumber(result.avg)}ms | ${formatNumber(result.max)}ms |`;
+          }
+
+          function generateMarkdownTable(results, timestamp) {
+            const header = '| 域名 | 状态/位置 | IP地址 | 最小延迟 | 平均延迟 | 最大延迟 |\n|------|-----------|--------|----------|----------|----------|\n';
+            const rows = results.map(generateTableRow).join('\n');
+            
+            return `## 🌐 最新测速结果\n\n最后更新：${timestamp}\n\n${header}${rows}\n\n<sub>✅ 良好 | ⚠️ 一般 | ❌ 较差</sub>`;
           }
 
           async function main() {
-            console.log('开始测速，域名列表:', domains);
+            console.log('🚀 开始测速，域名列表:', domains);
             
             const results = [];
-            for (const domain of domains) {
-              console.log(`正在测试: ${domain}`);
+            for (const [index, domain] of domains.entries()) {
+              console.log(`[${index + 1}/${domains.length}] 正在测试: ${domain}`);
               const result = await testDomain(domain);
               results.push(result);
-              await new Promise(resolve => setTimeout(resolve, 1000));
+              
+              if (result.success) {
+                console.log(`   ✓ 成功: ${result.avg}ms (${result.location})`);
+              } else {
+                console.log(`   ✗ 失败: ${result.error}`);
+              }
+              
+              // 避免API限流，最后一项不延迟
+              if (index < domains.length - 1) {
+                await new Promise(resolve => setTimeout(resolve, 1500));
+              }
             }
             
             const timestamp = getCurrentTime();
-            const tableHeader = `| 域名 | 位置 | IP地址 | 最小延迟 | 平均延迟 | 最大延迟 |\n|------|------|--------|----------|----------|----------|\n`;
-            const tableRows = results.map(generateTableRow).join('\n');
-            const newTable = tableHeader + tableRows;
+            const markdownTable = generateMarkdownTable(results, timestamp);
             
-            console.log('\n测速结果:');
-            console.log(newTable);
-            
+            // 保存JSON格式
             const fs = require('fs');
             fs.writeFileSync('speedtest-results.json', JSON.stringify({
               timestamp,
-              results
+              results,
+              summary: {
+                total: results.length,
+                success: results.filter(r => r.success).length,
+                failed: results.filter(r => !r.success).length,
+                avgResponse: results.filter(r => r.success).reduce((acc, r) => acc + r.avg, 0) / results.filter(r => r.success).length || 0
+              }
             }, null, 2));
             
-            fs.writeFileSync('speedtest-table.txt', newTable);
+            // 保存Markdown表格
+            fs.writeFileSync('SPEEDTEST.md', markdownTable);
             
-            console.log('\n测速完成，结果已保存');
+            console.log('\n✅ 测速完成，结果已保存');
+            console.log(markdownTable);
           }
 
-          main().catch(console.error);
+          main().catch(error => {
+            console.error('❌ 测速失败:', error);
+            process.exit(1);
+          });
           EOF
       
       - name: 运行测速脚本
         run: node scripts/speedtest.js
         id: speedtest
+        continue-on-error: true  # 即使失败也继续
       
-      - name: 读取测速结果
-        id: read-results
+      - name: 准备更新内容
+        id: prepare
         run: |
-          # 使用临时文件方式，避免多行字符串问题
-          echo "table<<DELIMITER" >> $GITHUB_OUTPUT
-          cat speedtest-table.txt >> $GITHUB_OUTPUT
-          echo "DELIMITER" >> $GITHUB_OUTPUT
-          
           # 读取时间戳
-          echo "timestamp=$(jq -r '.timestamp' speedtest-results.json)" >> $GITHUB_OUTPUT
+          if [ -f speedtest-results.json ]; then
+            TIMESTAMP=$(jq -r '.timestamp' speedtest-results.json)
+            echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+            
+            # 读取成功/失败统计
+            SUCCESS=$(jq '.summary.success' speedtest-results.json)
+            FAILED=$(jq '.summary.failed' speedtest-results.json)
+            echo "success_count=$SUCCESS" >> $GITHUB_OUTPUT
+            echo "failed_count=$FAILED" >> $GITHUB_OUTPUT
+          else
+            echo "timestamp=$(date -u '+%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+            echo "success_count=0" >> $GITHUB_OUTPUT
+            echo "failed_count=0" >> $GITHUB_OUTPUT
+          fi
       
       - name: 更新README.md
         run: |
-          # 从环境变量获取表格内容
-          TABLE_CONTENT="${{ steps.read-results.outputs.table }}"
-          TIMESTAMP="${{ steps.read-results.outputs.timestamp }}"
+          START_MARK="<!-- SPEEDTEST-START -->"
+          END_MARK="<!-- SPEEDTEST-END -->"
           
-          # 准备新内容
-          NEW_CONTENT="<!-- SPEEDTEST-START -->
-
-## 🌐 最新测速结果
-
-最后更新：${TIMESTAMP}
-
-${TABLE_CONTENT}
-
-<!-- SPEEDTEST-END -->"
+          # 检查SPEEDTEST.md是否存在
+          if [ ! -f SPEEDTEST.md ]; then
+            echo "⚠️ 测速结果文件不存在，跳过更新"
+            exit 0
+          fi
+          
+          # 读取新内容
+          NEW_CONTENT=$(cat SPEEDTEST.md)
+          
+          # 准备带标记的完整内容
+          FULL_CONTENT="${START_MARK}\n\n${NEW_CONTENT}\n\n${END_MARK}"
           
           # 检查README是否存在
           if [ ! -f README.md ]; then
             echo "# 测速结果" > README.md
           fi
           
-          # 使用更简单的方法：完全替换标记之间的内容
-          if grep -q "<!-- SPEEDTEST-START -->" README.md; then
-            # 创建临时文件
-            cp README.md README.md.tmp
-            
-            # 删除从START到END的内容
-            sed -i '/<!-- SPEEDTEST-START -->/,/<!-- SPEEDTEST-END -->/d' README.md.tmp
-            
-            # 追加新内容
-            cat README.md.tmp > README.md
-            echo -e "\n${NEW_CONTENT}\n" >> README.md
-            rm README.md.tmp
+          # 创建临时文件
+          cp README.md README.tmp
+          
+          # 如果存在标记，替换内容；否则追加
+          if grep -q "$START_MARK" README.tmp; then
+            # 使用sed替换标记间的内容
+            sed -i "/$START_MARK/,/$END_MARK/c\\$FULL_CONTENT" README.tmp
           else
             # 追加到文件末尾
-            echo -e "\n${NEW_CONTENT}" >> README.md
+            echo -e "\n\n$FULL_CONTENT" >> README.tmp
           fi
           
-          echo "README.md 已更新"
+          # 替换原文件
+          mv README.tmp README.md
+          
+          echo "✅ README.md 已更新"
+      
+      - name: 创建测速徽章
+        if: success() || failure()
+        run: |
+          if [ -f speedtest-results.json ]; then
+            SUCCESS=$(jq '.summary.success' speedtest-results.json)
+            FAILED=$(jq '.summary.failed' speedtest-results.json)
+            TOTAL=$(jq '.summary.total' speedtest-results.json)
+            AVG=$(jq '.summary.avgResponse' speedtest-results.json)
+            
+            # 生成徽章数据（可选，如果使用 shields.io）
+            echo "📊 测速统计: 总计 $TOTAL 域名, 成功 $SUCCESS, 失败 $FAILED, 平均延迟 ${AVG}ms"
+          fi
       
       - name: 提交更改
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🤖 自动更新测速结果'
-          file_pattern: README.md speedtest-results.json
+          commit_message: '🤖 自动更新测速结果 [$(date +'%Y-%m-%d')]'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
+          file_pattern: README.md speedtest-results.json SPEEDTEST.md
+          skip_dirty_check: false
+          skip_fetch: true
+      
+      - name: 发送通知（可选）
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '⚠️ 测速工作流运行失败，请检查日志'
+            })
