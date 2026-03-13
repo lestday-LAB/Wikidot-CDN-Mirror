@@ -108,7 +108,7 @@ jobs:
             const header = '| 域名 | 状态/位置 | 最小延迟 | 平均延迟 | 最大延迟 |\n|:------|:-----------|:----------|:----------|:----------|\n';
             const rows = results.map(generateTableRow).join('\n');
             
-            return `## 🌐 域名测速\n\n此处列出了本项目所有支持的域名，并对其定期测速，供大家选择参考。\n\n${header}${rows}\n\n<sub>最后更新：${timestamp} | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>`;
+            return `## 🌐 域名测速\n\n此处列出了本项目所有支持的域名，并对其定期测速，供大家选择参考。部分域名可能套用了Cloudflare等域名服务，可能导致数据不准确，还请注意。\n\n${header}${rows}\n\n<sub>最后更新：${timestamp} | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>`;
           }
 
           async function main() {
