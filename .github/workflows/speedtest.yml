@@ -2,7 +2,7 @@ name: 多域名测速
 
 on:
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '0 */6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -121,48 +121,51 @@ jobs:
       - name: 读取测速结果
         id: read-results
         run: |
-          # 使用正确的多行字符串格式
-          echo "table<<__EOF__" >> $GITHUB_OUTPUT
+          # 使用临时文件方式，避免多行字符串问题
+          echo "table<<DELIMITER" >> $GITHUB_OUTPUT
           cat speedtest-table.txt >> $GITHUB_OUTPUT
-          echo "__EOF__" >> $GITHUB_OUTPUT
+          echo "DELIMITER" >> $GITHUB_OUTPUT
           
-          # 读取JSON结果
-          TIMESTAMP=$(cat speedtest-results.json | jq -r '.timestamp')
-          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+          # 读取时间戳
+          echo "timestamp=$(jq -r '.timestamp' speedtest-results.json)" >> $GITHUB_OUTPUT
       
       - name: 更新README.md
         run: |
-          # 备份README
-          cp README.md README.md.bak || true
-          
-          # 定义标记
-          START_MARK="<!-- SPEEDTEST-START -->"
-          END_MARK="<!-- SPEEDTEST-END -->"
-          
-          # 从步骤输出中获取表格内容
+          # 从环境变量获取表格内容
           TABLE_CONTENT="${{ steps.read-results.outputs.table }}"
           TIMESTAMP="${{ steps.read-results.outputs.timestamp }}"
           
           # 准备新内容
-          NEW_CONTENT="${START_MARK}\n\n## 🌐 最新测速结果\n\n最后更新：${TIMESTAMP}\n\n${TABLE_CONTENT}\n\n${END_MARK}"
+          NEW_CONTENT="<!-- SPEEDTEST-START -->
+
+## 🌐 最新测速结果
+
+最后更新：${TIMESTAMP}
+
+${TABLE_CONTENT}
+
+<!-- SPEEDTEST-END -->"
           
           # 检查README是否存在
           if [ ! -f README.md ]; then
             echo "# 测速结果" > README.md
           fi
           
-          # 检查是否已存在标记
-          if grep -q "$START_MARK" README.md; then
-            # 使用awk替换现有内容（更可靠）
-            awk -v start="$START_MARK" -v end="$END_MARK" -v new="$NEW_CONTENT" '
-            $0 ~ start {print new; skip=1; next}
-            $0 ~ end {skip=0; next}
-            !skip
-            ' README.md > README.md.tmp
-            mv README.md.tmp README.md
+          # 使用更简单的方法：完全替换标记之间的内容
+          if grep -q "<!-- SPEEDTEST-START -->" README.md; then
+            # 创建临时文件
+            cp README.md README.md.tmp
+            
+            # 删除从START到END的内容
+            sed -i '/<!-- SPEEDTEST-START -->/,/<!-- SPEEDTEST-END -->/d' README.md.tmp
+            
+            # 追加新内容
+            cat README.md.tmp > README.md
+            echo -e "\n${NEW_CONTENT}\n" >> README.md
+            rm README.md.tmp
           else
             # 追加到文件末尾
-            echo -e "\n\n${NEW_CONTENT}" >> README.md
+            echo -e "\n${NEW_CONTENT}" >> README.md
           fi
           
           echo "README.md 已更新"
