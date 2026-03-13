@@ -1,34 +1,34 @@
 {
-  "timestamp": "2026-03-13 15:46:35 UTC",
+  "timestamp": "2026-03-13 15:48:25 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 40.28,
-      "min": 12.31,
-      "avg": 26.3,
-      "responseTime": 1599,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 62.56,
+      "min": 46.64,
+      "avg": 54.6,
+      "responseTime": 1256,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
       "ip": "64.29.17.1",
-      "max": 70.67,
-      "min": 14.1,
-      "avg": 42.39,
-      "responseTime": 374,
+      "max": 17.5,
+      "min": 11,
+      "avg": 14.25,
+      "responseTime": 270,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 18.14,
-      "min": 14.37,
-      "avg": 16.26,
-      "responseTime": 445,
+      "ip": "64.29.17.1",
+      "max": 17.82,
+      "min": 10.57,
+      "avg": 14.2,
+      "responseTime": 260,
       "success": true
     }
   ],
@@ -36,6 +36,6 @@
     "total": 3,
     "success": 3,
     "failed": 0,
-    "avgResponse": 28.316666666666666
+    "avgResponse": 27.683333333333334
   }
 }
