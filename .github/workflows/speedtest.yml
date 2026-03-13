@@ -96,18 +96,19 @@ jobs:
 
           function generateTableRow(result) {
             if (!result.success) {
-              return `| ${result.domain} | ❌ 失败 | ${result.error} | - | - | - |`;
+              return `| ${result.domain} | ❌ 失败 | ${result.error} | - | - |`;
             }
             
             const status = result.avg < 200 ? '✅' : (result.avg < 500 ? '⚠️' : '❌');
-            return `| ${result.domain} | ${status} ${result.location} | ${result.ip} | ${formatNumber(result.min)}ms | ${formatNumber(result.avg)}ms | ${formatNumber(result.max)}ms |`;
+            return `| ${result.domain} | ${status} ${result.location} | ${formatNumber(result.min)}ms | ${formatNumber(result.avg)}ms | ${formatNumber(result.max)}ms |`;
           }
 
           function generateMarkdownTable(results, timestamp) {
-            const header = '| 域名 | 状态/位置 | IP地址 | 最小延迟 | 平均延迟 | 最大延迟 |\n|------|-----------|--------|----------|----------|----------|\n';
+            // 修复：分隔线应该对应5列
+            const header = '| 域名 | 状态/位置 | 最小延迟 | 平均延迟 | 最大延迟 |\n|:------|:-----------|:----------|:----------|:----------|\n';
             const rows = results.map(generateTableRow).join('\n');
             
-            return `## 🌐 域名测速\n\n此处列出了本项目所有支持的域名，并对其定期测速，供大家选择参考。\n\n最后更新：${timestamp}\n\n${header}${rows}\n\n<sub>✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>`;
+            return `## 🌐 域名测速\n\n此处列出了本项目所有支持的域名，并对其定期测速，供大家选择参考。\n\n${header}${rows}\n\n<sub>最后更新：${timestamp}</sub>\n\n<sub>✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>`;
           }
 
           async function main() {
