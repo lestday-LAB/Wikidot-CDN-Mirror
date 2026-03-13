@@ -107,7 +107,7 @@ jobs:
             const header = '| 域名 | 状态/位置 | IP地址 | 最小延迟 | 平均延迟 | 最大延迟 |\n|------|-----------|--------|----------|----------|----------|\n';
             const rows = results.map(generateTableRow).join('\n');
             
-            return `## 🌐 最新测速结果\n\n最后更新：${timestamp}\n\n${header}${rows}\n\n<sub>✅ 良好 | ⚠️ 一般 | ❌ 较差</sub>`;
+            return `## 🌐 最新测速结果\n\n最后更新：${timestamp}\n\n${header}${rows}\n\n<sub>✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>`;
           }
 
           async function main() {
@@ -143,7 +143,7 @@ jobs:
                 total: results.length,
                 success: results.filter(r => r.success).length,
                 failed: results.filter(r => !r.success).length,
-                avgResponse: results.filter(r => r.success).reduce((acc, r) => acc + r.avg, 0) / results.filter(r => r.success).length || 0
+                avgResponse: results.filter(r => r.success).reduce((acc, r) => acc + r.avg, 0) / (results.filter(r => r.success).length || 1)
               }
             }, null, 2));
             
@@ -198,7 +198,7 @@ jobs:
           # 读取新内容
           NEW_CONTENT=$(cat SPEEDTEST.md)
           
-          # 准备带标记的完整内容
+          # 准备带标记的完整内容 - 修复：正确保留换行符
           FULL_CONTENT="${START_MARK}\n\n${NEW_CONTENT}\n\n${END_MARK}"
           
           # 检查README是否存在
@@ -211,11 +211,38 @@ jobs:
           
           # 如果存在标记，替换内容；否则追加
           if grep -q "$START_MARK" README.tmp; then
-            # 使用sed替换标记间的内容
-            sed -i "/$START_MARK/,/$END_MARK/c\\$FULL_CONTENT" README.tmp
+            # 修复：使用awk替代sed，更可靠地处理多行内容
+            awk -v start="$START_MARK" -v end="$END_MARK" -v new="$NEW_CONTENT" '
+              BEGIN { found=0; printed=0 }
+              {
+                if ($0 ~ start) {
+                  print $0
+                  print ""
+                  print new
+                  print ""
+                  found=1
+                  next
+                }
+                if ($0 ~ end && found) {
+                  print $0
+                  printed=1
+                  found=0
+                  next
+                }
+                if (!found) {
+                  print $0
+                }
+              }
+              END {
+                if (!printed && found) {
+                  print end
+                }
+              }
+            ' README.tmp > README.new
+            mv README.new README.tmp
           else
             # 追加到文件末尾
-            echo -e "\n\n$FULL_CONTENT" >> README.tmp
+            echo -e "\n\n${FULL_CONTENT}" >> README.tmp
           fi
           
           # 替换原文件
@@ -232,14 +259,24 @@ jobs:
             TOTAL=$(jq '.summary.total' speedtest-results.json)
             AVG=$(jq '.summary.avgResponse' speedtest-results.json)
             
-            # 生成徽章数据（可选，如果使用 shields.io）
-            echo "📊 测速统计: 总计 $TOTAL 域名, 成功 $SUCCESS, 失败 $FAILED, 平均延迟 ${AVG}ms"
+            # 修复：处理AVG为null或0的情况
+            if [ "$AVG" = "null" ] || [ -z "$AVG" ]; then
+              AVG=0
+            fi
+            
+            # 格式化平均延迟为整数
+            AVG_INT=$(printf "%.0f" $AVG)
+            
+            echo "📊 测速统计: 总计 $TOTAL 域名, 成功 $SUCCESS, 失败 $FAILED, 平均延迟 ${AVG_INT}ms"
+            
+            # 可选：生成shield.io徽章URL
+            echo "📛 徽章URL: https://img.shields.io/badge/测速-${SUCCESS}成功%20${FAILED}失败%20${AVG_INT}ms-blue"
           fi
       
       - name: 提交更改
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🤖 自动更新测速结果 [${{ github.event.head_commit.timestamp }}]'
+          commit_message: '🤖 自动更新测速结果 [$(date -u "+%Y-%m-%d %H:%M:%S")]'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
@@ -247,14 +284,4 @@ jobs:
           skip_dirty_check: false
           skip_fetch: true
       
-      - name: 发送通知（可选）
-        if: failure()
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '⚠️ 测速工作流运行失败，请检查日志'
-            })
+      # 注意：通知功能已完全移除
