@@ -1,12 +1,3 @@
-# Wikidot-CDN-Mirror
-Wikidot的CDN反向代理，专为特殊网络环境使用。
-
-浅薄AI之力，希望各位能喜欢！
-
-# 使用方法
-
-<!-- SPEEDTEST-START -->
-
 ## 🌐 最新测速结果
 
 最后更新：2026-03-13 15:42:10 UTC
@@ -18,5 +9,3 @@ Wikidot的CDN反向代理，专为特殊网络环境使用。
 | cdn.mirror.lestday233.eu.org | ✅ 美国 | 216.198.79.65 | 11.22ms | 16.68ms | 22.13ms |
 
 <sub>✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
-
-<!-- SPEEDTEST-END -->
