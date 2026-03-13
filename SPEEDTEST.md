@@ -4,10 +4,8 @@
 
 | 域名 | 状态/位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 20.29ms | 89.03ms | 157.76ms |
-| img.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 11.48ms | 19.23ms | 26.97ms |
-| cdn.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 11.56ms | 15.31ms | 19.05ms |
+| wdfiles.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 11.56ms | 17.90ms | 24.23ms |
+| img.mirror.lestday233.eu.org | ✅ 美国 | 12.04ms | 18.43ms | 24.81ms |
+| cdn.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 11.56ms | 15.68ms | 19.80ms |
 
-<sub>最后更新：2026-03-13 15:54:07 UTC</sub>
-
-<sub>✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-03-13 15:56:03 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
