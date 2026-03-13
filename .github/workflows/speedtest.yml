@@ -239,7 +239,7 @@ jobs:
       - name: 提交更改
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🤖 自动更新测速结果 [$(date +'%Y-%m-%d')]'
+          commit_message: '🤖 自动更新测速结果 [${{ github.event.head_commit.timestamp }}]'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
