@@ -24,8 +24,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'  # 启用缓存加速
-      
+          # 移除缓存配置，因为我们没有锁文件
+          
       - name: 安装依赖
         run: |
           # 安装jq（如果不存在）
@@ -198,9 +198,6 @@ jobs:
           # 读取新内容
           NEW_CONTENT=$(cat SPEEDTEST.md)
           
-          # 准备带标记的完整内容 - 修复：正确保留换行符
-          FULL_CONTENT="${START_MARK}\n\n${NEW_CONTENT}\n\n${END_MARK}"
-          
           # 检查README是否存在
           if [ ! -f README.md ]; then
             echo "# 测速结果" > README.md
@@ -211,38 +208,32 @@ jobs:
           
           # 如果存在标记，替换内容；否则追加
           if grep -q "$START_MARK" README.tmp; then
-            # 修复：使用awk替代sed，更可靠地处理多行内容
+            # 使用awk替换标记间的内容
             awk -v start="$START_MARK" -v end="$END_MARK" -v new="$NEW_CONTENT" '
-              BEGIN { found=0; printed=0 }
+              BEGIN { in_block = 0 }
               {
                 if ($0 ~ start) {
                   print $0
                   print ""
                   print new
                   print ""
-                  found=1
+                  in_block = 1
                   next
                 }
-                if ($0 ~ end && found) {
+                if ($0 ~ end) {
                   print $0
-                  printed=1
-                  found=0
+                  in_block = 0
                   next
                 }
-                if (!found) {
+                if (!in_block) {
                   print $0
-                }
-              }
-              END {
-                if (!printed && found) {
-                  print end
                 }
               }
             ' README.tmp > README.new
             mv README.new README.tmp
           else
             # 追加到文件末尾
-            echo -e "\n\n${FULL_CONTENT}" >> README.tmp
+            echo -e "\n\n${START_MARK}\n\n${NEW_CONTENT}\n\n${END_MARK}" >> README.tmp
           fi
           
           # 替换原文件
@@ -259,13 +250,13 @@ jobs:
             TOTAL=$(jq '.summary.total' speedtest-results.json)
             AVG=$(jq '.summary.avgResponse' speedtest-results.json)
             
-            # 修复：处理AVG为null或0的情况
+            # 处理AVG为null或0的情况
             if [ "$AVG" = "null" ] || [ -z "$AVG" ]; then
               AVG=0
             fi
             
             # 格式化平均延迟为整数
-            AVG_INT=$(printf "%.0f" $AVG)
+            AVG_INT=$(printf "%.0f" $AVG 2>/dev/null || echo "0")
             
             echo "📊 测速统计: 总计 $TOTAL 域名, 成功 $SUCCESS, 失败 $FAILED, 平均延迟 ${AVG_INT}ms"
             
@@ -283,5 +274,3 @@ jobs:
           file_pattern: README.md speedtest-results.json SPEEDTEST.md
           skip_dirty_check: false
           skip_fetch: true
-      
-      # 注意：通知功能已完全移除
