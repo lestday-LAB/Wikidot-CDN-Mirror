@@ -19,13 +19,13 @@ todo
 
 | 域名 | 位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ✅ 美国 | 11.39ms | 38.37ms | 65.34ms |
-| img.mirror.lestday233.eu.org | ✅ 美国 | 12.07ms | 17.92ms | 23.77ms |
-| cdn.mirror.lestday233.eu.org | ✅ 美国 | 15.95ms | 18.75ms | 21.54ms |
-| wdfiles.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 53.13ms | 82.52ms | 111.90ms |
-| img.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 12.49ms | 29.91ms | 47.32ms |
-| cdn.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 85.18ms | 106.59ms | 128.00ms |
+| wdfiles.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 15.03ms | 23.01ms | 30.98ms |
+| img.mirror.lestday233.eu.org | ✅ 美国 | 20.16ms | 22.52ms | 24.87ms |
+| cdn.mirror.lestday233.eu.org | ✅ 美国 | 12.33ms | 15.78ms | 19.23ms |
+| wdfiles.mirror.backroomswiki.com | ✅ 美国 | 18.44ms | 19.94ms | 21.43ms |
+| img.mirror.backroomswiki.com | ✅ 美国 | 32.01ms | 54.92ms | 77.82ms |
+| cdn.mirror.backroomswiki.com | ✅ 美国 | 18.08ms | 21.00ms | 23.91ms |
 
-<sub>最后更新：2026-03-14 02:21:37 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-03-14 02:23:42 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
 
 <!-- SPEEDTEST-END -->
