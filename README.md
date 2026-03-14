@@ -13,7 +13,7 @@ https://d2qhngyckgiutd.cloudfront.net/636505035d1cb12bb05ae80cf3859f5b
 
 
 替换为
- https://img.mirror.lestday233.eu.org/636505035d1cb12bb05ae80cf3859f5b
+https://img.mirror.lestday233.eu.org/636505035d1cb12bb05ae80cf3859f5b
 ```
 
 ### 【本地】使用Header Editor
