@@ -5,7 +5,8 @@ Wikidot的CDN反向代理，专为特殊网络环境使用。
 
 ## 📑 使用方法
 
-todo
+### 【站点】作为CDN代理域名使用
+### 【本地】使用Header Editor
 
 <!-- SPEEDTEST-START -->
 
