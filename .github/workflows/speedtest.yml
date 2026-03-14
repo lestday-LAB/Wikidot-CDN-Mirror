@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '0 */8 * * *'  # 每8小时运行一次
   workflow_dispatch:        # 支持手动触发
+  push:
+    branches: [ main, master ]
+    paths:
+      - '.github/workflows/speedtest.yml' # 编辑后自动触发
 
 # 添加并发控制，避免多个运行实例冲突
 concurrency:
