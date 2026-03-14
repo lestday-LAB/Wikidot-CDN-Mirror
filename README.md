@@ -26,7 +26,7 @@ https://d3g0gp89917ko0.cloudfront.net/v--7690939296dc/common--javascript/init.co
 https://cdn.mirror.lestday233.eu.org/v--7690939296dc/common--javascript/init.combined.js
 ```
 
-但是这两种方法用途非常有限，基本上不适合在网站内通过``image``等方式直接链接使用。
+但是这两种方法用途非常有限，基本上不适合在网站内通过``[[image]]``等方式直接链接使用。
 
 特别的，上传到**wdfiles的图片文件**，应该使用如下格式：
 ```
