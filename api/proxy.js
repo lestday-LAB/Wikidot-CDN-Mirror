@@ -4,7 +4,10 @@
 const DOMAIN_MAP = {
     'img.mirror.lestday233.eu.org': 'https://d2qhngyckgiutd.cloudfront.net',
     'cdn.mirror.lestday233.eu.org': 'https://d3g0gp89917ko0.cloudfront.net',
-    'wdfiles.mirror.lestday233.eu.org': 'wdfiles.com'
+    'wdfiles.mirror.lestday233.eu.org': 'wdfiles.com',
+    'img.mirror.backroomswiki.com': 'https://d2qhngyckgiutd.cloudfront.net',
+    'cdn.mirror.backroomswiki.com': 'https://d3g0gp89917ko0.cloudfront.net',
+    'wdfiles.mirror.backroomswiki.com': 'wdfiles.com'
   };
   
   // 安全配置
