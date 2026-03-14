@@ -8,7 +8,10 @@ Wikidot的CDN反向代理，专为特殊网络环境使用。
 ### 【站点】作为CDN代理域名使用
 使用[域名测速](#-域名测速)所列出的域名，替换原本的Wikidot链接地址。例如：
 ```
-https://d2qhngyckgiutd.cloudfront.net/636505035d1cb12bb05ae80cf3859f5b ——> https://img.mirror.lestday233.eu.org/636505035d1cb12bb05ae80cf3859f5b
+原链接
+https://d2qhngyckgiutd.cloudfront.net/636505035d1cb12bb05ae80cf3859f5b
+
+替换为 https://img.mirror.lestday233.eu.org/636505035d1cb12bb05ae80cf3859f5b
 ```
 
 ### 【本地】使用Header Editor
