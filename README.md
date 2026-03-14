@@ -7,13 +7,32 @@ Wikidot的CDN反向代理，专为特殊网络环境使用。
 
 ### 【站点】作为CDN代理域名使用
 使用[域名测速](#-域名测速)所列出的域名，替换原本的Wikidot链接地址。例如：
+
+**Cloudfront CDN存储的头像**
 ```
 原链接
 https://d2qhngyckgiutd.cloudfront.net/636505035d1cb12bb05ae80cf3859f5b
 
-
 替换为
 https://img.mirror.lestday233.eu.org/636505035d1cb12bb05ae80cf3859f5b
+```
+
+**Cloudfront CDN存储的JS文件**
+```
+原链接
+https://d3g0gp89917ko0.cloudfront.net/v--7690939296dc/common--javascript/init.combined.js
+
+替换为
+https://cdn.mirror.lestday233.eu.org/v--7690939296dc/common--javascript/init.combined.js
+```
+
+特别的，上传到**wdfiles的图片文件**，应该使用如下格式：
+```
+原链接
+https://[网站UNIX名称].wdfiles.com/[资源具体地址]
+
+替换为
+https://wdfiles.mirror.lestday233.eu.org/[网站UNIX名称]/[资源具体地址]
 ```
 
 ### 【本地】使用Header Editor
