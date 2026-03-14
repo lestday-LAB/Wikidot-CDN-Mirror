@@ -2,7 +2,7 @@ name: 多域名测速
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时运行一次
+    - cron: '0 */8 * * *'  # 每8小时运行一次
   workflow_dispatch:        # 支持手动触发
 
 # 添加并发控制，避免多个运行实例冲突
@@ -38,7 +38,10 @@ jobs:
           const domains = [
             'wdfiles.mirror.lestday233.eu.org',
             'img.mirror.lestday233.eu.org',
-            'cdn.mirror.lestday233.eu.org'
+            'cdn.mirror.lestday233.eu.org',
+            'wdfiles.mirror.backroomswiki.com',
+            'img.mirror.backroomswiki.com',
+            'cdn.mirror.backroomswiki.com',
           ];
 
           const API_BASE = 'https://api-v2.cenguigui.cn/api/ping/api.php';
