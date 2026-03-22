@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-03-21 16:32:43 UTC",
+  "timestamp": "2026-03-22 02:26:33 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 463.82,
-      "min": 108.24,
-      "avg": 286.03,
-      "responseTime": 3341,
+      "ip": "216.198.79.1",
+      "max": 479.52,
+      "min": 56.01,
+      "avg": 267.77,
+      "responseTime": 2332,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 343.09,
-      "min": 167.09,
-      "avg": 255.09,
-      "responseTime": 1120,
+      "ip": "64.29.17.1",
+      "max": 604.88,
+      "min": 250.74,
+      "avg": 427.81,
+      "responseTime": 1666,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 80.6,
-      "min": 70.91,
-      "avg": 75.76,
-      "responseTime": 455,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 334.37,
+      "min": 49.25,
+      "avg": 191.81,
+      "responseTime": 723,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 294.75,
-      "min": 81.77,
-      "avg": 188.26,
-      "responseTime": 619,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 585.55,
+      "min": 565.27,
+      "avg": 575.41,
+      "responseTime": 2206,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 130.88,
-      "min": 19.81,
-      "avg": 75.35,
-      "responseTime": 824,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 141.71,
+      "min": 48.37,
+      "avg": 95.04,
+      "responseTime": 516,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.65",
-      "max": 80.3,
-      "min": 59.22,
-      "avg": 69.76,
-      "responseTime": 747,
+      "max": 289.92,
+      "min": 212.69,
+      "avg": 251.31,
+      "responseTime": 879,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 158.375
+    "avgResponse": 301.5249999999999
   }
 }
