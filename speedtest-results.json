@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-03-23 08:58:59 UTC",
+  "timestamp": "2026-03-23 16:57:40 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 173.57,
-      "min": 65.79,
-      "avg": 119.68,
-      "responseTime": 2383,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 443.61,
+      "min": 87.98,
+      "avg": 265.8,
+      "responseTime": 2104,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 431.5,
-      "min": 155.68,
-      "avg": 293.59,
-      "responseTime": 1051,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 296.54,
+      "min": 84.14,
+      "avg": 190.34,
+      "responseTime": 747,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
       "ip": "64.29.17.65",
-      "max": 1129.74,
-      "min": 82.12,
-      "avg": 605.93,
-      "responseTime": 1560,
+      "max": 25.4,
+      "min": 17.83,
+      "avg": 21.62,
+      "responseTime": 641,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 85.76,
-      "min": 80.68,
-      "avg": 83.22,
-      "responseTime": 494,
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 113.61,
+      "min": 78.48,
+      "avg": 96.05,
+      "responseTime": 497,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 240.08,
-      "min": 139.4,
-      "avg": 189.74,
-      "responseTime": 875,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 160.78,
+      "min": 58.6,
+      "avg": 109.69,
+      "responseTime": 521,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 212.77,
-      "min": 15.25,
-      "avg": 114.01,
-      "responseTime": 921,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 151.75,
+      "min": 118.12,
+      "avg": 134.94,
+      "responseTime": 1756,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 234.36166666666665
+    "avgResponse": 136.40666666666667
   }
 }
