@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-03-30 16:58:09 UTC",
+  "timestamp": "2026-03-31 02:33:07 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 275.72,
-      "min": 24.98,
-      "avg": 150.35,
-      "responseTime": 3007,
+      "ip": "216.198.79.65",
+      "max": 196.81,
+      "min": 86.96,
+      "avg": 141.89,
+      "responseTime": 1886,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 300.68,
-      "min": 13.8,
-      "avg": 157.24,
-      "responseTime": 1806,
+      "ip": "216.198.79.1",
+      "max": 307.67,
+      "min": 17.97,
+      "avg": 162.82,
+      "responseTime": 648,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 100.23,
-      "min": 22.95,
-      "avg": 61.59,
-      "responseTime": 592,
+      "ip": "216.198.79.1",
+      "max": 278.46,
+      "min": 112.85,
+      "avg": 195.66,
+      "responseTime": 687,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.1",
-      "max": 66.88,
-      "min": 16.44,
-      "avg": 41.66,
-      "responseTime": 725,
+      "max": 452.67,
+      "min": 259.61,
+      "avg": 356.14,
+      "responseTime": 1357,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 231.61,
-      "min": 15.73,
-      "avg": 123.67,
-      "responseTime": 933,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 157.95,
+      "min": 15.38,
+      "avg": 86.67,
+      "responseTime": 525,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 169.87,
-      "min": 87.74,
-      "avg": 128.81,
-      "responseTime": 747,
+      "ip": "216.198.79.65",
+      "max": 280.63,
+      "min": 14.22,
+      "avg": 147.43,
+      "responseTime": 698,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 110.55333333333333
+    "avgResponse": 181.76833333333332
   }
 }
