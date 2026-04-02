@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-04-02 09:00:01 UTC",
+  "timestamp": "2026-04-02 16:57:56 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 337.59,
-      "min": 71.73,
-      "avg": 204.66,
-      "responseTime": 7732,
+      "ip": "64.29.17.1",
+      "max": 301.57,
+      "min": 17.69,
+      "avg": 159.63,
+      "responseTime": 2696,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 65.63,
-      "min": 12.76,
-      "avg": 39.2,
-      "responseTime": 5471,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 283.41,
+      "min": 84.89,
+      "avg": 184.15,
+      "responseTime": 826,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 70.81,
-      "min": 12.13,
-      "avg": 41.47,
-      "responseTime": 2772,
+      "ip": "216.198.79.65",
+      "max": 300.97,
+      "min": 19.89,
+      "avg": 160.43,
+      "responseTime": 1142,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 76.84,
-      "min": 13.85,
-      "avg": 45.35,
-      "responseTime": 1472,
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 167.71,
+      "min": 28.57,
+      "avg": 98.14,
+      "responseTime": 757,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 107.23,
-      "min": 13.66,
-      "avg": 60.45,
-      "responseTime": 1371,
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 56.66,
+      "min": 13.72,
+      "avg": 35.19,
+      "responseTime": 530,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 106.34,
-      "min": 15.88,
-      "avg": 61.11,
-      "responseTime": 436,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 169.11,
+      "min": 21.22,
+      "avg": 95.17,
+      "responseTime": 447,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 75.37333333333335
+    "avgResponse": 122.11833333333333
   }
 }
