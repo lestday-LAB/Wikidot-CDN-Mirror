@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-04-10 09:13:00 UTC",
+  "timestamp": "2026-04-10 16:54:40 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "超时",
-      "responseTime": 10004
+      "responseTime": 10003
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "success": false,
       "error": "超时",
-      "responseTime": 10000
+      "responseTime": 10001
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
@@ -21,39 +21,31 @@
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 340.93,
-      "min": 206.08,
-      "avg": 273.51,
-      "responseTime": 3654,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10000
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 173.58,
-      "min": 92.06,
-      "avg": 132.82,
-      "responseTime": 984,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10000
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.1",
-      "max": 167.05,
-      "min": 73.91,
-      "avg": 120.48,
-      "responseTime": 3670,
+      "max": 105.74,
+      "min": 34.18,
+      "avg": 69.96,
+      "responseTime": 9338,
       "success": true
     }
   ],
   "summary": {
     "total": 6,
-    "success": 3,
-    "failed": 3,
-    "avgResponse": 175.60333333333332
+    "success": 1,
+    "failed": 5,
+    "avgResponse": 69.96
   }
 }
