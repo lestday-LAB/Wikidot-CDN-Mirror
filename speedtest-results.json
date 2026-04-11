@@ -1,51 +1,71 @@
 {
-  "timestamp": "2026-04-10 16:54:40 UTC",
+  "timestamp": "2026-04-11 02:26:25 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "超时",
-      "responseTime": 10003
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 308.94,
+      "min": 14.3,
+      "avg": 161.62,
+      "responseTime": 3241,
+      "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "超时",
-      "responseTime": 10001
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 292.86,
+      "min": 10.39,
+      "avg": 151.63,
+      "responseTime": 1830,
+      "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "超时",
-      "responseTime": 10000
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 21.35,
+      "min": 13.97,
+      "avg": 17.66,
+      "responseTime": 1664,
+      "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "success": false,
-      "error": "超时",
-      "responseTime": 10000
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 170.14,
+      "min": 16.28,
+      "avg": 93.21,
+      "responseTime": 2231,
+      "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "success": false,
-      "error": "超时",
-      "responseTime": 10000
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 192.92,
+      "min": 12.55,
+      "avg": 102.74,
+      "responseTime": 2201,
+      "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 105.74,
-      "min": 34.18,
-      "avg": 69.96,
-      "responseTime": 9338,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 21.2,
+      "min": 16.27,
+      "avg": 18.74,
+      "responseTime": 1934,
       "success": true
     }
   ],
   "summary": {
     "total": 6,
-    "success": 1,
-    "failed": 5,
-    "avgResponse": 69.96
+    "success": 6,
+    "failed": 0,
+    "avgResponse": 90.93333333333334
   }
 }
