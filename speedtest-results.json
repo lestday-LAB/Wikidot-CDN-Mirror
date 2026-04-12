@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-04-12 08:51:36 UTC",
+  "timestamp": "2026-04-12 16:41:46 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 303.91,
-      "min": 14.15,
-      "avg": 159.03,
-      "responseTime": 2414,
+      "ip": "64.29.17.65",
+      "max": 215.28,
+      "min": 25.83,
+      "avg": 120.56,
+      "responseTime": 1520,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 300.09,
-      "min": 18.53,
-      "avg": 159.31,
-      "responseTime": 567,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 394.42,
+      "min": 138.22,
+      "avg": 266.32,
+      "responseTime": 1002,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 29.26,
-      "min": 15.48,
-      "avg": 22.37,
-      "responseTime": 1050,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 316.2,
+      "min": 22.49,
+      "avg": 169.35,
+      "responseTime": 618,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.65",
-      "max": 59.69,
-      "min": 16.15,
-      "avg": 37.92,
-      "responseTime": 381,
+      "max": 60.13,
+      "min": 11.33,
+      "avg": 35.73,
+      "responseTime": 406,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "location": "美国佛罗里达迈阿密",
       "ip": "64.29.17.65",
-      "max": 59.14,
-      "min": 14.21,
-      "avg": 36.68,
-      "responseTime": 532,
+      "max": 62.89,
+      "min": 18.36,
+      "avg": 40.63,
+      "responseTime": 357,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "location": "美国佛罗里达迈阿密",
       "ip": "64.29.17.1",
-      "max": 43.08,
-      "min": 13,
-      "avg": 28.04,
-      "responseTime": 291,
+      "max": 56.4,
+      "min": 14.91,
+      "avg": 35.66,
+      "responseTime": 722,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 73.89166666666668
+    "avgResponse": 111.375
   }
 }
