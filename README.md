@@ -55,9 +55,10 @@ https://wdfiles.mirror.lestday233.eu.org/[网站UNIX名称]/[资源具体地址]
 | img.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
 | cdn.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
 | wdfiles.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
-| img.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
+| img.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
 | cdn.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
 
-<sub>最后更新：2026-04-15 02:40:02 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-04-15 09:22:39 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
 
 <!-- SPEEDTEST-END -->

@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-04-15 02:40:02 UTC",
+  "timestamp": "2026-04-15 09:22:39 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "超时",
-      "responseTime": 10002
+      "responseTime": 10004
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
@@ -17,19 +17,19 @@
       "domain": "cdn.mirror.lestday233.eu.org",
       "success": false,
       "error": "超时",
-      "responseTime": 9999
+      "responseTime": 10001
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "success": false,
       "error": "超时",
-      "responseTime": 10000
+      "responseTime": 10001
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "success": false,
-      "error": "超时",
-      "responseTime": 10001
+      "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
+      "responseTime": 289
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
