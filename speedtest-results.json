@@ -1,71 +1,47 @@
 {
-  "timestamp": "2026-04-14 17:10:55 UTC",
+  "timestamp": "2026-04-15 02:40:02 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 341.33,
-      "min": 17.13,
-      "avg": 179.23,
-      "responseTime": 1931,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10002
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 875.55,
-      "min": 14.3,
-      "avg": 444.93,
-      "responseTime": 1184,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10001
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 352.52,
-      "min": 14.71,
-      "avg": 183.62,
-      "responseTime": 911,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 9999
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 60.89,
-      "min": 10.16,
-      "avg": 35.53,
-      "responseTime": 377,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10000
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 164.52,
-      "min": 15.04,
-      "avg": 89.78,
-      "responseTime": 521,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10001
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 52.18,
-      "min": 13.68,
-      "avg": 32.93,
-      "responseTime": 1759,
-      "success": true
+      "success": false,
+      "error": "超时",
+      "responseTime": 10001
     }
   ],
   "summary": {
     "total": 6,
-    "success": 6,
-    "failed": 0,
-    "avgResponse": 161.0033333333333
+    "success": 0,
+    "failed": 6,
+    "avgResponse": 0
   }
 }
