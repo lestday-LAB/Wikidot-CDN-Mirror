@@ -1,67 +1,71 @@
 {
-  "timestamp": "2026-04-16 02:47:27 UTC",
+  "timestamp": "2026-04-16 09:21:47 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 593.87,
-      "min": 314.12,
-      "avg": 454,
-      "responseTime": 5234,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 734.6,
+      "min": 312.72,
+      "avg": 523.66,
+      "responseTime": 4455,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 781.6,
-      "min": 308.51,
-      "avg": 545.06,
-      "responseTime": 5361,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 1088.33,
+      "min": 730.16,
+      "avg": 909.25,
+      "responseTime": 4606,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 1499.03,
-      "min": 311.66,
-      "avg": 905.35,
-      "responseTime": 3766,
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 698.07,
+      "min": 365.62,
+      "avg": 531.85,
+      "responseTime": 3149,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 1208.62,
-      "min": 340.81,
-      "avg": 774.72,
-      "responseTime": 3547,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 565.81,
+      "min": 309.27,
+      "avg": 437.54,
+      "responseTime": 3187,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 1884.8,
-      "min": 308.95,
-      "avg": 1096.88,
-      "responseTime": 4762,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 1632.89,
+      "min": 548.63,
+      "avg": 1090.76,
+      "responseTime": 5364,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "success": false,
-      "error": "超时",
-      "responseTime": 10007
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 2898.89,
+      "min": 883.87,
+      "avg": 1891.38,
+      "responseTime": 5163,
+      "success": true
     }
   ],
   "summary": {
     "total": 6,
-    "success": 5,
-    "failed": 1,
-    "avgResponse": 755.202
+    "success": 6,
+    "failed": 0,
+    "avgResponse": 897.4066666666666
   }
 }
