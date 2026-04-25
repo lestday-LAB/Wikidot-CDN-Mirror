@@ -15,4 +15,4 @@
 | img.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
 | cdn.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
 
-<sub>最后更新：2026-04-25 02:35:09 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-04-25 08:55:59 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
