@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-05-03 09:22:54 UTC",
+  "timestamp": "2026-05-03 16:53:21 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 375.01,
-      "min": 18.17,
-      "avg": 196.59,
-      "responseTime": 2072,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 193.49,
+      "min": 34.37,
+      "avg": 113.93,
+      "responseTime": 1307,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 141.61,
-      "min": 135.29,
-      "avg": 138.45,
-      "responseTime": 629,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 96.49,
+      "min": 12.79,
+      "avg": 54.64,
+      "responseTime": 349,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "location": "美国佛罗里达迈阿密",
       "ip": "64.29.17.65",
-      "max": 68.56,
-      "min": 11.46,
-      "avg": 40.01,
-      "responseTime": 383,
+      "max": 367.38,
+      "min": 23.54,
+      "avg": 195.46,
+      "responseTime": 783,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 87.07,
-      "min": 11.9,
-      "avg": 49.49,
-      "responseTime": 565,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 61.33,
+      "min": 30.77,
+      "avg": 46.05,
+      "responseTime": 340,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 81.56,
-      "min": 15.48,
-      "avg": 48.52,
-      "responseTime": 433,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 292.71,
+      "min": 12.37,
+      "avg": 152.54,
+      "responseTime": 537,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.65",
-      "max": 159.51,
-      "min": 98.82,
-      "avg": 129.17,
-      "responseTime": 812,
+      "max": 162.35,
+      "min": 11.96,
+      "avg": 87.16,
+      "responseTime": 430,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 100.37166666666666
+    "avgResponse": 108.29666666666667
   }
 }
