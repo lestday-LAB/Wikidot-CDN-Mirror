@@ -8,11 +8,11 @@
 
 | 域名 | 位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ❌ 失败 | fetch failed | - | - |
-| img.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
-| cdn.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
-| wdfiles.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
-| img.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
-| cdn.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
+| wdfiles.mirror.lestday233.eu.org | ✅ 美国 | 94.09ms | 115.73ms | 137.37ms |
+| img.mirror.lestday233.eu.org | ⚠️ 美国 | 71.26ms | 210.85ms | 350.44ms |
+| cdn.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 16.64ms | 193.24ms | 369.83ms |
+| wdfiles.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 14.38ms | 107.34ms | 200.30ms |
+| img.mirror.backroomswiki.com | ✅ 美国 | 33.11ms | 100.21ms | 167.30ms |
+| cdn.mirror.backroomswiki.com | ✅ 美国 | 15.49ms | 45.38ms | 75.26ms |
 
-<sub>最后更新：2026-05-02 16:51:59 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-05-03 03:23:40 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
