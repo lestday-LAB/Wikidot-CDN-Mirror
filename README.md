@@ -51,13 +51,13 @@ https://wdfiles.mirror.lestday233.eu.org/[网站UNIX名称]/[资源具体地址]
 
 | 域名 | 位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ⚠️ 美国 | 20.41ms | 215.06ms | 409.71ms |
-| img.mirror.lestday233.eu.org | ✅ 美国 | 90.33ms | 120.59ms | 150.85ms |
-| cdn.mirror.lestday233.eu.org | ✅ 美国 | 28.63ms | 91.91ms | 155.19ms |
-| wdfiles.mirror.backroomswiki.com | ✅ 美国 | 66.28ms | 88.25ms | 110.22ms |
-| img.mirror.backroomswiki.com | ✅ 美国 | 10.20ms | 106.95ms | 203.69ms |
-| cdn.mirror.backroomswiki.com | ✅ 美国 | 15.51ms | 69.93ms | 124.35ms |
+| wdfiles.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
+| img.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
+| cdn.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
+| wdfiles.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
+| img.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
+| cdn.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
 
-<sub>最后更新：2026-05-05 10:04:11 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-05-05 17:29:34 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
 
 <!-- SPEEDTEST-END -->
