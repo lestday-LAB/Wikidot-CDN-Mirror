@@ -1,41 +1,41 @@
 {
-  "timestamp": "2026-05-07 10:25:41 UTC",
+  "timestamp": "2026-05-07 17:49:17 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "测速失败",
-      "responseTime": 1344
+      "responseTime": 1042
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "success": false,
       "error": "测速失败",
-      "responseTime": 249
+      "responseTime": 218
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "success": false,
       "error": "测速失败",
-      "responseTime": 248
+      "responseTime": 218
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "success": false,
       "error": "测速失败",
-      "responseTime": 248
+      "responseTime": 218
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "success": false,
       "error": "测速失败",
-      "responseTime": 249
+      "responseTime": 218
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "success": false,
       "error": "测速失败",
-      "responseTime": 249
+      "responseTime": 218
     }
   ],
   "summary": {
