@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-05-09 16:57:13 UTC",
+  "timestamp": "2026-05-10 03:26:58 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 1310
+      "responseTime": 1064
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
@@ -17,25 +17,25 @@
       "domain": "cdn.mirror.lestday233.eu.org",
       "success": false,
       "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 243
+      "responseTime": 244
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "success": false,
       "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 242
+      "responseTime": 246
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "success": false,
       "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 242
+      "responseTime": 244
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "success": false,
       "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 246
+      "responseTime": 244
     }
   ],
   "summary": {
