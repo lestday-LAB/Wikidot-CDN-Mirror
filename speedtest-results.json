@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-05-16 03:20:41 UTC",
+  "timestamp": "2026-05-16 09:41:42 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 308.48,
-      "min": 13.38,
-      "avg": 160.93,
-      "responseTime": 1890,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 275.42,
+      "min": 21.83,
+      "avg": 148.63,
+      "responseTime": 1760,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.1",
-      "max": 285.98,
-      "min": 38.52,
-      "avg": 162.25,
-      "responseTime": 608,
+      "ip": "216.198.79.65",
+      "max": 311.93,
+      "min": 92.55,
+      "avg": 202.24,
+      "responseTime": 1416,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 45.33,
-      "min": 19.61,
-      "avg": 32.47,
-      "responseTime": 724,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 342.62,
+      "min": 12.18,
+      "avg": 177.4,
+      "responseTime": 963,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.1",
-      "max": 165.52,
-      "min": 11.91,
-      "avg": 88.72,
-      "responseTime": 519,
+      "max": 68.44,
+      "min": 16.62,
+      "avg": 42.53,
+      "responseTime": 388,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 67.49,
-      "min": 15.59,
-      "avg": 41.54,
-      "responseTime": 992,
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 141.71,
+      "min": 11.87,
+      "avg": 76.79,
+      "responseTime": 398,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 66.87,
-      "min": 17.28,
-      "avg": 42.08,
-      "responseTime": 527,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 71.98,
+      "min": 56.27,
+      "avg": 64.13,
+      "responseTime": 376,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 87.99833333333333
+    "avgResponse": 118.61999999999999
   }
 }
