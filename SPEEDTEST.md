@@ -8,11 +8,11 @@
 
 | 域名 | 位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ✅ 美国 | 13.99ms | 160.60ms | 307.20ms |
-| img.mirror.lestday233.eu.org | ✅ 美国 | 16.56ms | 157.77ms | 298.98ms |
-| cdn.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 17.01ms | 161.18ms | 305.35ms |
-| wdfiles.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 16.75ms | 91.11ms | 165.46ms |
-| img.mirror.backroomswiki.com | ✅ 美国 | 16.25ms | 18.97ms | 21.69ms |
-| cdn.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 15.61ms | 37.25ms | 58.89ms |
+| wdfiles.mirror.lestday233.eu.org | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
+| img.mirror.lestday233.eu.org | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
+| cdn.mirror.lestday233.eu.org | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
+| wdfiles.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
+| img.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
+| cdn.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
 
-<sub>最后更新：2026-05-25 17:44:57 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-05-26 03:40:09 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
