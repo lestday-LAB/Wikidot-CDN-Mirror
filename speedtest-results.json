@@ -1,47 +1,71 @@
 {
-  "timestamp": "2026-06-01 13:36:54 UTC",
+  "timestamp": "2026-06-01 20:18:07 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 1283
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 302.22,
+      "min": 20.26,
+      "avg": 161.24,
+      "responseTime": 1949,
+      "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 262
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 309.58,
+      "min": 34.3,
+      "avg": 171.94,
+      "responseTime": 870,
+      "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 262
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 88.56,
+      "min": 16.34,
+      "avg": 52.45,
+      "responseTime": 387,
+      "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 263
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 168.08,
+      "min": 12.64,
+      "avg": 90.36,
+      "responseTime": 631,
+      "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 262
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 165.09,
+      "min": 10.45,
+      "avg": 87.77,
+      "responseTime": 788,
+      "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 262
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 64.85,
+      "min": 17.64,
+      "avg": 41.25,
+      "responseTime": 372,
+      "success": true
     }
   ],
   "summary": {
     "total": 6,
-    "success": 0,
-    "failed": 6,
-    "avgResponse": 0
+    "success": 6,
+    "failed": 0,
+    "avgResponse": 100.835
   }
 }
