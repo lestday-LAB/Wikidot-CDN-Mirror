@@ -1,64 +1,64 @@
 {
-  "timestamp": "2026-06-02 19:41:36 UTC",
+  "timestamp": "2026-06-03 04:15:32 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 115.99,
-      "min": 11.26,
-      "avg": 63.63,
-      "responseTime": 1795,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 108.79,
+      "min": 15.5,
+      "avg": 62.15,
+      "responseTime": 1700,
       "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 283.27,
-      "min": 17.84,
-      "avg": 150.56,
-      "responseTime": 753,
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 289.19,
+      "min": 17.21,
+      "avg": 153.2,
+      "responseTime": 874,
       "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 76.03,
-      "min": 14.54,
-      "avg": 45.29,
-      "responseTime": 385,
+      "ip": "216.198.79.1",
+      "max": 382.97,
+      "min": 29.25,
+      "avg": 206.11,
+      "responseTime": 803,
       "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 64.97,
-      "min": 19.85,
-      "avg": 42.41,
-      "responseTime": 387,
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 227.58,
+      "min": 15.05,
+      "avg": 121.32,
+      "responseTime": 473,
       "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "location": "美国",
       "ip": "216.198.79.1",
-      "max": 164.79,
-      "min": 12.73,
-      "avg": 88.76,
-      "responseTime": 475,
+      "max": 167.3,
+      "min": 17.64,
+      "avg": 92.47,
+      "responseTime": 436,
       "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "location": "美国佛罗里达迈阿密",
       "ip": "64.29.17.1",
-      "max": 165.8,
-      "min": 13.82,
-      "avg": 89.81,
-      "responseTime": 475,
+      "max": 187.36,
+      "min": 13.52,
+      "avg": 100.44,
+      "responseTime": 752,
       "success": true
     }
   ],
@@ -66,6 +66,6 @@
     "total": 6,
     "success": 6,
     "failed": 0,
-    "avgResponse": 80.07666666666667
+    "avgResponse": 122.61500000000001
   }
 }
