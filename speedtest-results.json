@@ -1,47 +1,71 @@
 {
-  "timestamp": "2026-06-04 04:09:14 UTC",
+  "timestamp": "2026-06-04 11:16:39 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 1186
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 180.43,
+      "min": 113.32,
+      "avg": 146.88,
+      "responseTime": 1881,
+      "success": true
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 194
+      "location": "美国",
+      "ip": "216.198.79.1",
+      "max": 289.15,
+      "min": 89.87,
+      "avg": 189.51,
+      "responseTime": 932,
+      "success": true
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 193
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 24.6,
+      "min": 18.57,
+      "avg": 21.59,
+      "responseTime": 363,
+      "success": true
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 191
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.1",
+      "max": 206.1,
+      "min": 16.28,
+      "avg": 111.19,
+      "responseTime": 540,
+      "success": true
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 205
+      "location": "美国佛罗里达迈阿密",
+      "ip": "64.29.17.65",
+      "max": 217.27,
+      "min": 48.92,
+      "avg": 133.1,
+      "responseTime": 546,
+      "success": true
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 213
+      "location": "美国",
+      "ip": "216.198.79.65",
+      "max": 109.19,
+      "min": 15.27,
+      "avg": 62.23,
+      "responseTime": 414,
+      "success": true
     }
   ],
   "summary": {
     "total": 6,
-    "success": 0,
-    "failed": 6,
-    "avgResponse": 0
+    "success": 6,
+    "failed": 0,
+    "avgResponse": 110.75
   }
 }
