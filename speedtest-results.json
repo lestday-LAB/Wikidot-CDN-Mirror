@@ -1,71 +1,47 @@
 {
-  "timestamp": "2026-06-12 18:08:03 UTC",
+  "timestamp": "2026-06-13 03:53:53 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.65",
-      "max": 292.76,
-      "min": 29.5,
-      "avg": 161.13,
-      "responseTime": 2443,
-      "success": true
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+      "responseTime": 1076
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
-      "location": "美国佛罗里达迈阿密",
-      "ip": "64.29.17.1",
-      "max": 360.29,
-      "min": 20.67,
-      "avg": 190.48,
-      "responseTime": 892,
-      "success": true
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+      "responseTime": 1507
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 68.19,
-      "min": 17.44,
-      "avg": 42.82,
-      "responseTime": 531,
-      "success": true
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+      "responseTime": 188
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 60.9,
-      "min": 12.09,
-      "avg": 36.5,
-      "responseTime": 357,
-      "success": true
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+      "responseTime": 187
     },
     {
       "domain": "img.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 61.04,
-      "min": 16,
-      "avg": 38.52,
-      "responseTime": 519,
-      "success": true
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+      "responseTime": 187
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
-      "location": "美国",
-      "ip": "216.198.79.65",
-      "max": 83.49,
-      "min": 15.73,
-      "avg": 49.61,
-      "responseTime": 380,
-      "success": true
+      "success": false,
+      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
+      "responseTime": 187
     }
   ],
   "summary": {
     "total": 6,
-    "success": 6,
-    "failed": 0,
-    "avgResponse": 86.50999999999999
+    "success": 0,
+    "failed": 6,
+    "avgResponse": 0
   }
 }
