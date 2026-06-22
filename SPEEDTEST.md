@@ -8,11 +8,11 @@
 
 | 域名 | 位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ✅ 美国 | 63.90ms | 177.20ms | 290.50ms |
-| img.mirror.lestday233.eu.org | ✅ 美国 | 17.28ms | 54.25ms | 91.22ms |
-| cdn.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 10.59ms | 38.50ms | 66.40ms |
-| wdfiles.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 15.32ms | 39.27ms | 63.22ms |
-| img.mirror.backroomswiki.com | ✅ 美国 | 13.88ms | 35.44ms | 57.00ms |
-| cdn.mirror.backroomswiki.com | ✅ 美国 | 16.10ms | 90.60ms | 165.09ms |
+| wdfiles.mirror.lestday233.eu.org | ✅ 美国佛罗里达迈阿密 | 19.09ms | 178.63ms | 338.17ms |
+| img.mirror.lestday233.eu.org | ✅ 美国 | 14.18ms | 42.26ms | 70.33ms |
+| cdn.mirror.lestday233.eu.org | ⚠️ 美国 | 93.31ms | 221.82ms | 350.33ms |
+| wdfiles.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 59.85ms | 124.57ms | 189.29ms |
+| img.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 104.08ms | 164.35ms | 224.61ms |
+| cdn.mirror.backroomswiki.com | ✅ 美国佛罗里达迈阿密 | 16.59ms | 93.35ms | 170.10ms |
 
-<sub>最后更新：2026-06-21 17:39:44 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-06-22 04:22:00 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
