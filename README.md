@@ -58,6 +58,6 @@ https://wdfiles.mirror.lestday233.eu.org/[网站UNIX名称]/[资源具体地址]
 | img.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
 | cdn.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
 
-<sub>最后更新：2026-07-04 17:06:57 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-07-05 03:31:10 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
 
 <!-- SPEEDTEST-END -->
