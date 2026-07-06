@@ -15,4 +15,4 @@
 | img.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
 | cdn.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<!DOCTYPE "... is not valid JSON | - | - |
 
-<sub>最后更新：2026-07-06 03:38:47 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-07-06 12:05:21 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
