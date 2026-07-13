@@ -1,41 +1,41 @@
 {
-  "timestamp": "2026-07-12 16:59:34 UTC",
+  "timestamp": "2026-07-13 02:53:38 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 709
+      "error": "超时",
+      "responseTime": 10004
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 201
+      "error": "超时",
+      "responseTime": 10000
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 181
+      "error": "超时",
+      "responseTime": 10001
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 190
+      "error": "超时",
+      "responseTime": 10000
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 184
+      "error": "超时",
+      "responseTime": 10000
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "success": false,
-      "error": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON",
-      "responseTime": 179
+      "error": "超时",
+      "responseTime": 10000
     }
   ],
   "summary": {
