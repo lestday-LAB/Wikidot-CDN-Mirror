@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-07-16 02:41:26 UTC",
+  "timestamp": "2026-07-16 10:10:06 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "超时",
-      "responseTime": 10003
+      "responseTime": 10005
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
@@ -17,7 +17,7 @@
       "domain": "cdn.mirror.lestday233.eu.org",
       "success": false,
       "error": "超时",
-      "responseTime": 10000
+      "responseTime": 10001
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
@@ -35,7 +35,7 @@
       "domain": "cdn.mirror.backroomswiki.com",
       "success": false,
       "error": "超时",
-      "responseTime": 10002
+      "responseTime": 10000
     }
   ],
   "summary": {
