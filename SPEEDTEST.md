@@ -8,11 +8,17 @@
 
 | 域名 | 位置 | 最小延迟 | 平均延迟 | 最大延迟 |
 |:------|:-----------|:----------|:----------|:----------|
-| wdfiles.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
-| img.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
-| cdn.mirror.lestday233.eu.org | ❌ 失败 | 超时 | - | - |
-| wdfiles.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
-| img.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
-| cdn.mirror.backroomswiki.com | ❌ 失败 | 超时 | - | - |
+| wdfiles.mirror.lestday233.eu.org | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
+| img.mirror.lestday233.eu.org | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
+| cdn.mirror.lestday233.eu.org | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
+| wdfiles.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
+| img.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
+| cdn.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<html>
+<h"... is not valid JSON | - | - |
 
-<sub>最后更新：2026-07-17 09:58:42 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-07-17 17:13:02 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
