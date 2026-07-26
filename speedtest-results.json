@@ -1,41 +1,41 @@
 {
-  "timestamp": "2026-07-26 02:51:21 UTC",
+  "timestamp": "2026-07-26 10:03:07 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
-      "responseTime": 1041
+      "responseTime": 1052
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "success": false,
       "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
-      "responseTime": 303
+      "responseTime": 321
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
       "success": false,
       "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
-      "responseTime": 318
+      "responseTime": 312
     },
     {
       "domain": "wdfiles.mirror.backroomswiki.com",
       "success": false,
       "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
-      "responseTime": 307
+      "responseTime": 312
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "success": false,
       "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
-      "responseTime": 303
+      "responseTime": 310
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "success": false,
       "error": "Unexpected token '<', \"<html>\r\n<h\"... is not valid JSON",
-      "responseTime": 305
+      "responseTime": 310
     }
   ],
   "summary": {

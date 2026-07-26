@@ -21,4 +21,4 @@
 | cdn.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<html>
 <h"... is not valid JSON | - | - |
 
-<sub>最后更新：2026-07-26 02:51:21 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-07-26 10:03:07 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
