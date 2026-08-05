@@ -64,6 +64,6 @@ https://wdfiles.mirror.lestday233.eu.org/[网站UNIX名称]/[资源具体地址]
 | cdn.mirror.backroomswiki.com | ❌ 失败 | Unexpected token '<', "<html>
 <h"... is not valid JSON | - | - |
 
-<sub>最后更新：2026-08-04 17:49:14 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-08-05 02:34:31 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
 
 <!-- SPEEDTEST-END -->
