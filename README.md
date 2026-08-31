@@ -58,6 +58,6 @@ https://wdfiles.mirror.lestday233.eu.org/[网站UNIX名称]/[资源具体地址]
 | img.mirror.backroomswiki.com | ❌ 失败 | fetch failed | - | - |
 | cdn.mirror.backroomswiki.com | ❌ 失败 | fetch failed | - | - |
 
-<sub>最后更新：2026-08-30 19:04:53 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
+<sub>最后更新：2026-08-31 04:10:42 UTC | ✅ 良好 (<200ms) | ⚠️ 一般 (200-500ms) | ❌ 较差 (>500ms)</sub>
 
 <!-- SPEEDTEST-END -->
