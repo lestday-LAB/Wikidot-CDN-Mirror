@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-22 19:47:00 UTC",
+  "timestamp": "2026-10-23 03:42:59 UTC",
   "results": [
     {
       "domain": "wdfiles.mirror.lestday233.eu.org",
       "success": false,
       "error": "fetch failed",
-      "responseTime": 339
+      "responseTime": 322
     },
     {
       "domain": "img.mirror.lestday233.eu.org",
       "success": false,
       "error": "fetch failed",
-      "responseTime": 288
+      "responseTime": 144
     },
     {
       "domain": "cdn.mirror.lestday233.eu.org",
@@ -23,19 +23,19 @@
       "domain": "wdfiles.mirror.backroomswiki.com",
       "success": false,
       "error": "fetch failed",
-      "responseTime": 285
+      "responseTime": 307
     },
     {
       "domain": "img.mirror.backroomswiki.com",
       "success": false,
       "error": "fetch failed",
-      "responseTime": 273
+      "responseTime": 342
     },
     {
       "domain": "cdn.mirror.backroomswiki.com",
       "success": false,
       "error": "fetch failed",
-      "responseTime": 74
+      "responseTime": 253
     }
   ],
   "summary": {
